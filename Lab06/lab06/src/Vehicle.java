@@ -19,3 +19,4 @@ class fura extends Vehicle
     }
 
 }
+

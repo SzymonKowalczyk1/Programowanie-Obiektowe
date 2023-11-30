@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Book {
     public String title;
     public String author;
@@ -28,6 +30,10 @@ public class Book {
 public String toString(){
     return "Book: "+ title + " by " + author + "Pages: " + numberofPages;
 }
+//Dodaj metodę equals(),
+// która porównuje dwie książki
+// na podstawie ich
+// pól title, author i numberOfPages
 @Override
     public boolean equals(Object o ){
         if(o instanceof Book obj){
@@ -38,5 +44,7 @@ public String toString(){
         else {
             return false;
         }
+
+
 }
 }
